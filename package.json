@@ -14,6 +14,10 @@
     "streams",
     "sequentiell"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johannesboyne/streamstepper.git"
+  },
   "author": "Johannes Boyne <johannes@boyne.de>",
   "license": "MIT"
 }
