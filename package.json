@@ -1,0 +1,19 @@
+{
+  "name": "streamstepper",
+  "version": "0.0.1",
+  "description": "pipe multiple streams sequentially into one",
+  "main": "index.js",
+  "dependencies": {
+    "through": "~2.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "streams",
+    "sequentiell"
+  ],
+  "author": "Johannes Boyne <johannes@boyne.de>",
+  "license": "MIT"
+}
