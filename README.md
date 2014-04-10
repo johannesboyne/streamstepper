@@ -23,4 +23,6 @@ newStepper.on('end', function () {
 })
 ```
 
+What this example does: creates 3 read-streams but starts consuming it sequentially thus avoiding too many opened pipes!
+
 `npm i streamstepper`
