@@ -13,7 +13,8 @@ function Streamstepper (streams, endCloseHandler) {
     this.streams[this.position].on('data', function (d) {
       that.streamOut.write(d)
       that.emit('data', d)
-    }).on(this.endClose, function () {
+    })
+    this.streams[this.position].on(this.endClose, function () {
       that.position++
       if (that.position < that.streams.length) { 
         that.stepThrough()
@@ -21,7 +22,8 @@ function Streamstepper (streams, endCloseHandler) {
         that.emit('end')
         that.streamOut.end()
       }
-  })
+    })
+    this.streams[this.position].resume()
   } 
   this.stepThrough()
 }
